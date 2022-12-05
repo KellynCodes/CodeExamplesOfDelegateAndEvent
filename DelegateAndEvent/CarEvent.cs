@@ -10,7 +10,7 @@
         public event CarEngineHandler AboutToBlow;
         private bool _carIsDead;
 
-        public void Accelerating(int delta)
+        public void IsAccelerating(int delta)
         {
             _carIsDead = ReturnCarIsDead();
             // If the car is dead, fire Exploded event.

@@ -68,11 +68,11 @@ namespace DelegateAndEvent
             CarEvent myCar = new();
             // We have direct access to the delegate!
             myCar.ListOfHandlers = CallWhenExploded;
-            myCar.Accelerating(10);
+            myCar.IsAccelerating(10);
             // We can now assign to a whole new object...
             // confusing at best.
             myCar.ListOfHandlers = CallHereToo;
-            myCar.Accelerating(10);
+            myCar.IsAccelerating(10);
             // The caller can also directly invoke the delegate!
             myCar.ListOfHandlers.Invoke("hee, hee, hee...");
             static void CallWhenExploded(string msg)
